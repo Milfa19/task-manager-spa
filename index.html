@@ -1,43 +1,51 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Task Manager SPA</title>
-  <link rel="stylesheet" href="css/style.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Task Manager SPA</title>
+ <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="left-panel">
-      <h2>Добавить задачу</h2>
-      <form id="task-form">
-        <input type="text" name="title" placeholder="Название" required>
-        <select name="stack" required>
-          <option value="">Выберите стек</option>
-          <option value="Web">Web</option>
-          <option value="Python">Python</option>
-          <option value="Дизайн">Дизайн</option>
-        </select>
-        <textarea name="description" placeholder="Описание"></textarea>
-        <button type="submit">Создать задачу</button>
-      </form>
-      <div class="filters">
-        <button class="filter-btn" data-type="all">Все</button>
-        <button class="filter-btn" data-type="Web">Web</button>
-        <button class="filter-btn" data-type="Python">Python</button>
-        <button class="filter-btn" data-type="Дизайн">Дизайн</button>
-      </div>
-    </div>
-    <div class="right-panel">
-      <h2>Список задач</h2>
-      <div class="tasks"></div>
-    </div>
-  </div>
-  <script type="module" src="js/main.js"></script>
+
+<div class="container">
+
+ <div class="left-panel">
+
+ <h2>Добавить задачу</h2>
+
+ <form id="task-form">
+  <input type="text" name="title" placeholder="Название" required>
+
+  <select name="stack" required>
+   <option value="">Выберите стек</option>
+   <option value="Web">Web</option>
+   <option value="Python">Python</option>
+   <option value="Дизайн">Дизайн</option>
+  </select>
+
+  <textarea name="description" placeholder="Описание"></textarea>
+
+  <button type="submit">Создать задачу</button>
+ </form>
+
+ <div class="filters">
+  <button class="filter-btn" data-type="all">Все</button>
+  <button class="filter-btn" data-type="Web">Web</button>
+  <button class="filter-btn" data-type="Python">Python</button>
+  <button class="filter-btn" data-type="Дизайн">Дизайн</button>
+ </div>
+
+ </div>
+
+ <div class="right-panel">
+  <h2>Список задач</h2>
+  <div class="tasks"></div>
+ </div>
+
+</div>
+
+<script type="module" src="js/main.js"></script>
+
 </body>
 </html>
-=======
-FROM nginx:alpine
-COPY . /usr/share/nginx/html
->>>>>>> 1bb6854b2cec1dc5619cc92ca83f1bcef29359ec
