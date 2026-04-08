@@ -6,8 +6,8 @@ export const renderTasks = (tasks, container) => {
 
   container.innerHTML = tasks.map(task => `
     <div class="task-card">
-      <span>${task.stack}</span>
       <h3>${task.title}</h3>
+      <span>${task.stack}</span>
       <p>${task.description}</p>
       <button data-id="${task.id}" class="delete-btn">Удалить</button>
     </div>
